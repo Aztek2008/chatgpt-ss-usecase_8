@@ -1,9 +1,4 @@
-interface FormData {
-  first_name: string;
-  last_name: string;
-  email: string;
-  message: string;
-}
+import { FormData } from '../app/formSlice';
 
 export interface ValidationErrors {
   first_name?: string;

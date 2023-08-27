@@ -24,10 +24,12 @@ export const InputField: FC<InputFieldProps> = ({
 }) => {
   return (
     <div className='inputField'>
-      <label>{label}</label>
+      <label htmlFor={name}>{label}</label>
       <input
+        id={name}
         type={type}
         value={value}
+        name={name}
         onChange={onChange}
         onBlur={() => onBlur(name)}
         className={error ? 'error' : ''}

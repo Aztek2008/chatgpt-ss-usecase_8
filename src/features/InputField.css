@@ -1,0 +1,23 @@
+.inputField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.inputField input {
+  padding: 0.5rem;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.inputField input.error {
+  outline: 2px solid red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.8rem;
+}
